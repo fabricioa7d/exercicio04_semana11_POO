@@ -1,0 +1,66 @@
+/*1. Crie um array de números em typescript e escreva um código que exibe a soma
+dos elementos.
+
+let numeros : number[] = [1,2,3,4,5,6,7,8,9,10];
+let soma : number = 0;
+
+for(var i : number = 0; i < numeros.length; i++){
+    soma += numeros[i];
+}
+console.log(`Soma: ${soma}`);
+
+2. Considere o trecho de código abaixo e descreva o que acontece com a execução
+do código abaixo:
+let a : number[] = [1,2,3,4,5];
+for (let i : number = 0; i <= a.length; i++) {
+console.log(a[i]);
+}
+
+R- É impresso todos os numeros do array, mas como a condicao é menor ou igual a ultima 
+posicao é impresso undefined.
+
+3. Declare um array com 10 números e exiba-os em ordem crescente e em ordem
+decrescente.
+
+let numeros1 : number[] = [5,8,4,7,10,9,3,1,2,6];
+let numeros2 : number[] = [5,8,4,7,10,9,3,1,2,6];
+
+function ordenarNumCrescente(num1 : number, num2 : number) {
+    if (num1 > num2){
+        return 1;
+    };
+    if (num1 < num2){
+        return -1;
+    }else{
+        return 0;
+    }
+}
+
+numeros1.sort(ordenarNumCrescente);
+numeros2.sort(ordenarNumCrescente).reverse();
+
+console.log('Ordem Crescente');
+for (let i : number = 0; i < numeros1.length; i++) {
+    console.log(numeros1[i]);
+    }
+console.log('\nOrdem Decrescente');
+for (let i : number = 0; i < numeros2.length; i++) {
+    console.log(numeros2[i]);
+    }
+
+
+4. Declare uma string com o texto “Instituto Federal do Piauí” e use métodos específicos
+para:
+a. Exibir a string toda em maiúsculo;
+b. Retornar o caractere da posição 10;
+c. Retornar a última posição da vogal “o”;
+d. Dividir a frase em um array de strings tendo como delimitador os caracteres de
+espaço.*/
+
+let ifpi : string = 'Instituto Federal do Piauí';
+console.log(ifpi.toUpperCase());
+console.log(ifpi.charAt(10));
+console.log(ifpi.lastIndexOf('o'));
+console.log(ifpi.split(' '));
+
+    
